@@ -1,6 +1,6 @@
 services:
   db:
-    image: postgres:17
+    image: postgres:15
     container_name: idempotency-db
     restart: unless-stopped
     environment:

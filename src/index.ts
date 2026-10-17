@@ -1,10 +1,13 @@
 import dotenv from "dotenv";
 import express from "express";
+import paymentRouter from "./routes/payment.route.js";
 
 dotenv.config();
 
 const app = express();
 app.use(express.json());
+
+app.use("/api", paymentRouter);
 
 const PORT = Number(process.env.PORT ?? 3000);
 
