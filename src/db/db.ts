@@ -10,6 +10,4 @@ const client = new Pool({
     port: Number(process.env.DB_PORT),
 });
 
-await client.connect();
-
 export default client;
